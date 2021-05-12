@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+ }
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  background-color: #EEE;
+  padding: 20px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.container .header h3 {
+  color: #464646;
+}
+
+.container .header i {
+  font-size: 18px;
+  color: #606060;
+}
+
+.container .navbar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.container .navbar input{
+  border: none;
+  outline: none;
+  padding: 8px;
+  background-color: #DDD;
+  font-style: italic;
+}
+
+.container .navbar input:nth-child(1) {
+  width: 145px;
+}
+
+.container .navbar input:nth-child(2) {
+  width: 400px;
+}
+
+.container .navbar input:nth-child(3) {
+  width: 400px;
+}
+
+.container .navbar button {
+  border:none;
+  outline: none;
+  padding: 10px 25px;
+  background-color: #7225A0;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width:767px) {
+  .container .navbar {
+    flex-direction: column;
+  }
+
+  .container .navbar input {
+    font-size: 16px;
+  }
+
+  .container .navbar input:nth-child(1) {
+    width: 100%;
+  }
+  
+  .container .navbar input:nth-child(2) {
+    width: 100%;
+  }
+  
+  .container .navbar input:nth-child(3) {
+    width: 100%;
+  }
+}
+
+table {
+  width:100%;
+  border-spacing:0;
+  margin-bottom: 25px;
+}
+
+table tr td input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+table tr td input[type="checkbox"]:checked {
+  box-shadow: 0px 0px 70px #50329F inset , 0 0 3px #50329F;
+  border: none;
+  outline: none;
+}
+
+table td {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+table td .num {
+  width: 40px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+table td div {
+  width: fit-content;
+  padding: 8px;
+  margin: 0 auto;
+  color: white;
+  background-color: #2CE5C0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+table tr:nth-child(1) td {
+  border-bottom: 3px solid #DDD;
+}
+
+table tr:not(:nth-child(1)) td {
+  border-bottom: 2px solid #EEE;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.footer .foot-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .foot-right div {
+  cursor: pointer;
+}
+
+.footer .foot-right span {
+  padding: 6px 10px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+}
+
+.footer .foot-right span:nth-child(2) {
+  background-color: #7225A0;
+  color: white;
+}
